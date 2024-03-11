@@ -2,7 +2,7 @@ package resource
 
 import "fmt"
 
-func printsum() {
+func Printsum() {
 	sum := func(a int, b int) int {
 		return a + b
 	}

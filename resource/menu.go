@@ -11,7 +11,7 @@ type MenuItem struct {
 	Desc     string
 }
 
-func main() {
+func Menu() {
 	menu := []MenuItem{
 		{
 			ID:       1,

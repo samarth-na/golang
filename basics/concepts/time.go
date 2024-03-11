@@ -5,11 +5,9 @@ import (
 	"time"
 )
 
-var t int
-
 func Time() {
 	o := 1
-	var i, j int = 1, 2
+	i, j := 1, 2
 	timeMark := time.Now()
 	fmt.Println(timeMark)
 	// fmt.Scan(&i)
@@ -23,3 +21,9 @@ func Time() {
 	fmt.Println(timeMark)
 	fmt.Println(timeMark2)
 }
+
+// type i int
+// func (int i) Time() {
+// 	fmt.Print("i is", int)
+// 	fmt.Print(time.Now())
+// }

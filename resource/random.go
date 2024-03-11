@@ -17,13 +17,21 @@ func GenRandArray(limit int, size int) []int {
 	}
 	return randArray
 }
-func GenRand3X3Matrix(integer int) [3][3]int {
+
+func GenRand3X3Matrix(limit int) [3][3]int {
 	var mat [3][3]int
 	for index, value := range mat {
 		for index2 := range value {
-			mat[index][index2] = GenRandInt(integer)
+			mat[index][index2] = GenRandInt(limit)
 		}
+	}
+	return mat
+}
 
+func GenRand3X3Matrix3(limit int) [][]int {
+	mat := make([][]int, 3)
+	for index := range mat {
+		mat[index] = GenRandArray(limit, 3)
 	}
 	return mat
 }
@@ -37,6 +45,7 @@ func GenRand2X2Matrix(integer int) [2][2]int {
 	}
 	return mat
 }
+
 func GenRandSlice(limit int, size int) []int {
 	randSlice := make([]int, size)
 	for i := 0; i < size; i++ {

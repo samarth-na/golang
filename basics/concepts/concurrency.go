@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func f(n int) {
+func concur(n int) {
 	for i := 0; i < 10; i++ {
 		fmt.Println(n, ":", i)
 		amt := time.Duration(rand.Intn(250))
@@ -15,8 +15,8 @@ func f(n int) {
 }
 
 func Concurrency() {
-	for i := 0; i < 10; i++ {
-		go f(i)
+	for n := 0; n < 10; n++ {
+		go concur(n)
 	}
 	var input string
 	fmt.Scanln(&input)

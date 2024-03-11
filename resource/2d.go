@@ -16,6 +16,7 @@ func Printx(mainArr [5][5]int) {
 }
 
 func Sortarray() {
+
 	mainArr := [5][5]int{
 		{1, 0, 0, 0, 1},
 		{0, 1, 0, 1, 0},
@@ -24,5 +25,6 @@ func Sortarray() {
 		{1, 0, 0, 0, 1},
 	}
 	Printx(mainArr)
+
 	fmt.Println(mainArr[1][2])
 }

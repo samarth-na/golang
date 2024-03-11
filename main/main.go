@@ -1,6 +1,3 @@
-//go:build mytag
-// +build mytag
-
 package main
 
 import (
@@ -14,28 +11,33 @@ func AvgChange(a []float32) float32 {
 		sum += value
 	}
 	return sum / float32(len(a))
-
 }
 
 func FloatToPercentage(val float32) string {
-	return fmt.Sprintf("%.2f%%", val*100)
+	return fmt.Sprintf(
+		"%.2f%%", val*100)
 }
 
-func main() {
+func mmain() {
+	{
+		slicee := (resource.GenRandSlice(100, 10))
+		fmt.Println(slicee)
+		fmt.Println("")
 
-	arr := (resource.GenRandSlice(100, 100000))
-	fmt.Println(arr)
-	fmt.Println("")
-	res := resource.PercentageChange(arr)
-	fmt.Print(res)
-	fmt.Println("")
-	change := AvgChange(res)
-	fmt.Print(change)
-	fmt.Println("")
-	per := FloatToPercentage(change)
-	fmt.Print(per)
+		res := resource.PercentageChange(slicee)
+		fmt.Print(res)
+		fmt.Println("")
+
+		change := AvgChange(res)
+		fmt.Print(change)
+		fmt.Println("")
+
+		fmt.Println("")
+		per := FloatToPercentage(change)
+		fmt.Print(per)
+	}
+
 	end := 100000
 	for i := 1; i < end; i++ {
-
 	}
 }
