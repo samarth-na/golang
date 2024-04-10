@@ -6,7 +6,7 @@ var birthdate, birthmonth, birthyear, currentdate, currentmonth, currentyearr in
 
 var totalyear, totalmonth, totaldays int
 
-func datain() {
+func dataIn() {
 	fmt.Print("enter your birth date- ")
 	fmt.Scan(&birthdate)
 	for birthdate > 31 {
@@ -79,7 +79,7 @@ func findingage() {
 }
 
 func Age() {
-	datain()
+	dataIn()
 	findingage()
-	fmt.Println("you are \n", totaldays, "days", totalmonth, "months and", totalyear, "years old")
+	fmt.Println("you are", totaldays, "days", totalmonth, "months and", totalyear, "years old")
 }
