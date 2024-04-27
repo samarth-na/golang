@@ -18,7 +18,7 @@ func FloatToPercentage(val float32) string {
 		"%.2f%%", val*100)
 }
 
-func main() {
+func mmain() {
 	{
 		slicee := (resource.GenRandSlice(100, 10))
 		fmt.Println(slicee)
