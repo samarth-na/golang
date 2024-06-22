@@ -17,8 +17,3 @@ func main() {
 	resource.GenRandInt(100)
 	takeInp()
 }
-
-func Bsost() {
-	for _, v := range v {
-	}
-}
