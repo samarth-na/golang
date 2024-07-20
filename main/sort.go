@@ -7,6 +7,7 @@ import (
 
 func takeInp() {
 	var numOfArray, rangeOfnum int
+
 	fmt.Println("enter the number of arrays")
 	fmt.Scan(&numOfArray)
 	fmt.Println("number of number in array")

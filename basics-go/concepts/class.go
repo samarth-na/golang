@@ -31,7 +31,7 @@ func (p *Person) Bmi() float32 {
 	return bmi32
 }
 
-func main() {
+func classmain() {
 	// Create Address instance
 
 	mattAddress := Address{
