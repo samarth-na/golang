@@ -7,6 +7,7 @@ var birthdate, birthmonth, birthyear, currentdate, currentmonth, currentyearr in
 var totalyear, totalmonth, totaldays int
 
 func dataIn() {
+
 	fmt.Print("enter your birth date- ")
 	fmt.Scan(&birthdate)
 	for birthdate > 31 {
@@ -14,6 +15,7 @@ func dataIn() {
 		fmt.Print("try again :-")
 		fmt.Scan(&birthdate)
 	}
+
 	fmt.Print("enter your birth month- ")
 	fmt.Scan(&birthmonth)
 	for birthmonth > 12 {
@@ -21,6 +23,7 @@ func dataIn() {
 		fmt.Print("try again :-")
 		fmt.Scan(&birthmonth)
 	}
+
 	fmt.Print("enter your birth year- ")
 	fmt.Scan(&birthyear)
 	for birthyear < 100 {
@@ -28,6 +31,7 @@ func dataIn() {
 		fmt.Print("try again :-")
 		fmt.Scan(&birthyear)
 	}
+
 	fmt.Print("enter current date- ")
 	fmt.Scan(&currentdate)
 	for currentdate > 31 {
@@ -35,6 +39,7 @@ func dataIn() {
 		fmt.Print("try again :-")
 		fmt.Scan(&currentdate)
 	}
+
 	fmt.Print("enter current month- ")
 	fmt.Scan(&currentmonth)
 	for currentmonth > 12 {
@@ -42,6 +47,7 @@ func dataIn() {
 		fmt.Print("try again :-")
 		fmt.Scan(&currentmonth)
 	}
+
 	fmt.Print("enter current year- ")
 	fmt.Scan(&currentyearr)
 	for currentyearr < 1000 {
@@ -49,9 +55,10 @@ func dataIn() {
 		fmt.Print("try again :-")
 		fmt.Scan(&currentyearr)
 	}
+
 	for currentyearr < birthyear {
 
-		fmt.Println("today can be before you were born")
+		fmt.Println("current year can't be before you were born")
 		break
 	}
 }

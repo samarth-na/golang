@@ -1,14 +1,13 @@
 package exercise
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func IntToChr(integer int) []int {
-	newList := []int{}
-	for integer >= 1 {
-		singleDigit := integer % 10
-		integer /= 10
-		fmt.Println(singleDigit)
-		newList = append(newList, singleDigit)
+func IntToChr(integer int) int {
+	if integer < 10 {
+		return integer
 	}
-	return newList
+	fmt.Println(integer % 10)
+	return IntToChr(integer / 10)
 }

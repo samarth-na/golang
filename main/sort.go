@@ -6,6 +6,7 @@ import (
 )
 
 func takeInp() {
+
 	var numOfArray, rangeOfnum int
 
 	fmt.Println("enter the number of arrays")
