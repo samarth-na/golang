@@ -15,7 +15,7 @@ func takeInp() {
 	fmt.Scan(&rangeOfnum)
 }
 
-func main() {
-	resource.GenRandInt(100)
-	takeInp()
-}
+// func main() {
+// 	resource.GenRandInt(100)
+// 	takeInp()
+// }

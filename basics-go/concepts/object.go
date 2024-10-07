@@ -11,6 +11,10 @@ type Employee struct {
 	age       int
 }
 
+type country struct {
+	name string
+
+}
 type book struct {
 	title    string
 	auther   string

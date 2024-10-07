@@ -58,4 +58,5 @@ func GenPassword() string {
 
 func main() {
 	fmt.Print(GenPassword())
+
 }
