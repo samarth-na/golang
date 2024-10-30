@@ -6,5 +6,5 @@ import (
 
 func main() {
 
-	resource.Printsum()
+	resource.Sortarray()
 }

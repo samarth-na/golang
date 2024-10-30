@@ -24,5 +24,5 @@ func Sortarray() {
 	}
 	Printx(mainArr)
 
-	fmt.Println(mainArr[1][2])
+	// fmt.Println(mainArr[1][2])
 }
