@@ -1,4 +1,4 @@
-package resource
+package resourse
 
 func PercentageChange(a []int) []float32 {
 	var retarray []float32

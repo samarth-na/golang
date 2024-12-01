@@ -1,7 +1,7 @@
 package main
 
 import (
-	"alderaan/resource"
+	"alderaan/resourse"
 	"fmt"
 )
 

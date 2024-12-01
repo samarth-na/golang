@@ -1,10 +1,14 @@
 package main
 
 import (
-	"alderaan/resource"
+	"alderaan/resourse"
+	"fmt"
 )
 
 func main() {
+	var ans int
+	ans = resourse.GenRandInt(10)
 
-	resource.Sortarray()
+	fmt.Println(ans)
+
 }

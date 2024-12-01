@@ -1,8 +1,11 @@
-package resource
+package resourse
+
+import "math/rand/v2"
 
 func GenRandInt(limit int) int {
-	var randInt int
-	for randInt != 0 {
+	randInt := rand.IntN(limit)
+
+	for randInt == 0 {
 		randInt = GenRandInt(limit)
 	}
 	return randInt
